@@ -1,0 +1,32 @@
+*{
+	
+	font-family: "Oswald", serif;
+	list-style: none;
+	text-decoration: none;
+}
+
+:root{
+  --theme-color:#FFC000;
+  --bg-color:white;
+  --text-color:black;
+  --bgb-color:#efefef;
+}
+.table{
+    background-color: var(--bg-color);
+    box-shadow: inset;
+}
+.table th{
+    background-color: var(--text-color);
+    border: 1px solid var(--bgb-color);
+    padding: 10px;
+    color: var(--bgb-color);
+    font-size: 18px;
+    font-weight: 500;
+}
+.table td{
+    padding: 10px;
+    text-align: center;
+    border: 2px solid var(--bgb-color);
+    font-size: 18px;
+    font-weight: 700;
+}

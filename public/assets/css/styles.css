@@ -1,0 +1,168 @@
+*{
+	
+	font-family: "Oswald", serif;
+	list-style: none;
+	text-decoration: none;
+}
+
+:root{
+  --theme-color:#FFC000;
+  --bg-color:white;
+  --text-color:black;
+  --bgb-color:#efefef;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+section{
+    height: auto;
+    width: 100%;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+
+.page-content {
+    padding: 1.3rem 1rem;
+}
+
+.analytics {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 2rem;
+    background: transparent;
+}
+
+.card {
+    box-shadow: 0px 5px 5px -5px rgb(0 0 0 / 10%);
+    padding: 1rem;
+    border-radius: 3px;
+    border: 1px solid var(--theme-color);
+    background-color: var(--bg-color);
+}
+
+.card-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-head h2 {
+    color:var(--theme-color);
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.card-head span {
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+.card-progress small {
+    color:var(--text-color);
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+.card-indicator {
+    margin: .7rem 0rem;
+    height: 10px;
+    border-radius: 4px;
+    background: #e9edf2;
+    overflow: hidden;
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+    .analytics {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .analytics {
+        grid-template-columns: 100%;
+    }
+    
+    .sidebar {
+        left: -165px;
+        z-index: 90;
+    }
+    
+    
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+    }    
+}
+
+
+
+
+ 
+
+
+.shop{
+    position: relative;
+    width: 100%;
+    padding: 1.5rem;
+}
+
+.shop .images .img-fluid{
+    height: 18rem;
+    width: 10rem;
+}
+.shop .images-small{
+    display: flex;
+    justify-content: space-between;
+}
+.shop .images-small .images-small-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+.shop .images-small .images-small-col img{
+    margin-top: 0.7rem;
+    height: 8rem;
+    width: 8.5rem;
+}
+.shop .details{
+    padding: 1.2rem 1rem;
+}
+.shop .details h3{
+    padding: 0.5rem;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+.shop .details h4{
+    padding: 0.3rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+.shop .details h5{
+    padding: 0.3rem;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.shop .details p{
+    color: var(--text-color);
+    letter-spacing: 1px;
+}
+
+.shop button{
+    outline: none;
+    border: 1px solid var(--theme-color);
+    background-color:transparent;
+    color: var(--theme-color);
+    padding: 0.6rem 1rem;
+    font-weight: 600;
+    margin: 1rem 0;
+}
+
+
+
+
+

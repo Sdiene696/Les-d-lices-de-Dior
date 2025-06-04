@@ -1,0 +1,91 @@
+:root{
+  --theme-color:#FFC000;
+  --bg-color:white;
+  --text-color:black;
+  --bgb-color:#efefef;
+}
+
+.title{
+	position: relative;
+	font-size: 30px;
+	font-weight: 700;
+	color: var(--text-color);
+	margin-bottom: 10px;
+}
+.title::before{
+	position: absolute;
+	content: '';
+	left: 0;
+	bottom: -8px;
+	height: 3px;
+	width: 60px;
+	background: var(--theme-color);
+}
+form .main-box{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 10px 0 8px 0;
+}
+form .main-box .input-box{
+	width: calc(100% / 2 - 15px);
+	margin: 15px 0;
+}
+form .main-box .input-box input{
+	width: 100%;
+	height: 50px;
+	background:var(--bg-color);
+	color: var(t);
+	outline: none;
+	border-radius: 8px;
+	border: 1px solid var(--text-color);
+	padding-left: 17px;
+	font-size: 1rem;
+	transition: all .40s ease;
+}
+.main-box .input-box .text{
+	display: block;
+	margin-bottom: 8px;
+	color: var(--text-color);
+	font-weight: 500;
+    font-size: 1.2rem;
+}
+form .main-box .input-box input:focus,
+form .main-box .input-box input:valid{
+	border-color: var(--bgb-color);
+}
+
+form .btn{
+	height: 60px;
+    width: 150px;
+	margin: 20px 0;
+    
+}
+form .btn input{
+	height: 100%;
+	width: 100%;
+	outline: none;
+	background: var(--theme-color);
+	color: var(--bg-color);
+	border-radius: 8px;
+	border: none;
+	font-size: 20px;
+	font-weight: 500;
+	cursor: pointer;
+	transition: all .40s ease;
+}
+form .btn input:hover{
+	letter-spacing: 1px;
+}
+
+@media (max-width: 640px){
+	
+	form .main-box .input-box{
+		width: 100%;
+		margin: 5px 0;
+	}
+	form .main-box{
+		max-height: 430px;
+		overflow-y: scroll;
+	}
+}
